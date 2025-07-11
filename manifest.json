@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Analog Clock New Tab",
+  "version": "1.0",
+  "description": "Shows a custom analog clock on the new tab page.",
+  "chrome_url_overrides": {
+    "newtab": "new_tab.html"
+  },
+  "permissions": [
+    "storage"
+  ]
+}

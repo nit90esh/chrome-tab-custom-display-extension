@@ -1,0 +1,33 @@
+body {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  overflow: hidden;
+}
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#analog-clock {
+  background: radial-gradient(circle at 60% 40%, #2a2d34 60%, #23272b 100%);
+  border-radius: 50%;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6), 0 0 32px 4px #00ffe7a0;
+  border: 6px solid rgba(0, 255, 231, 0.18);
+  margin-bottom: 8px;
+}
+.date-display {
+  margin-top: 24px;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+  color: #fff;
+  text-shadow: 0 2px 16px #00ffe7a0, 0 2px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 8px 24px;
+}

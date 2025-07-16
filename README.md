@@ -30,7 +30,7 @@ You can edit `style.css` and `script.js` to further personalize the look and fee
 
 ## Screenshots
 
-![Screenshot](./Screenshot.png) <!-- Add a screenshot if you wish -->
+![Screenshot](./assets/Screenshot.png) <!-- Add a screenshot if you wish -->
 
 ---
 

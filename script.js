@@ -1,3 +1,7 @@
+const body = document.getElementsByTagName('body')[0];
+body.style.backgroundSize = "cover";
+body.style.backgroundPosition = "center";
+body.style.backgroundRepeat = "no-repeat";
 function drawClock(ctx, radius) {
   ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
   // Draw fancy face with gradient and glow
@@ -171,6 +175,13 @@ function updateClock() {
   const ampm = hours >= 12 ? "PM" : "AM";
   hours = hours % 12;
   hours = hours ? hours : 12; // the hour '0' should be '12'
+  if(hours >= 5 && hours < 12 && ampm === "AM") {
+    body.style.backgroundImage = "url('./assets/day.png')";
+  } else if(hours >= 12 || hours < 6 && ampm === "PM") {
+    body.style.backgroundImage = "url('./assets/noon.png')";
+  } else {
+    body.style.backgroundImage = "url('./assets/night.png')";
+  }
   const timeStr = `${hours.toString().padStart(2, "0")}:${minutes
     .toString()
     .padStart(2, "0")}:${seconds.toString().padStart(2, "0")} ${ampm}`;
